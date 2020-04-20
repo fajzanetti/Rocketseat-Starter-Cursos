@@ -6,6 +6,7 @@
 
 Crie uma função que dado o objeto a seguir:
 
+
 ```js
 var endereco = {
  rua: "Rua dos pinheiros",
