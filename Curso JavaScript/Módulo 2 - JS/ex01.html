@@ -1,0 +1,35 @@
+<!-- Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado -->
+<!-- vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve -->
+<!-- aparecer na tela -->
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ex 1</title>
+    </head>
+    <body>
+        
+        <button class="btn">Aperte!</button>
+        <div class="app">
+
+        </div>
+
+        <script>
+            let btnElement = document.querySelector("button")
+            let divElement = document.querySelector(".app")
+
+            btnElement.onclick = function() {
+                let quadrado = document.createElement('div')
+                quadrado.style.float = "left"
+                quadrado.style.margin = "2px"
+                quadrado.style.width = "100px";
+                quadrado.style.height = "100px";
+                quadrado.style.border =  "4px solid #000";
+                quadrado.style.backgroundColor = '#f00'
+
+
+                divElement.appendChild(quadrado)
+            }
+        </script>
+    </body>
+</html>

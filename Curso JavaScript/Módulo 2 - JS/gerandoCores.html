@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cores</title>
+    </head>
+    <body>
+
+        <div class="app"></div>
+
+        <script>
+            let btnElement = document.querySelector("button")
+            let divElement = document.querySelector(".app")
+
+            function COLOR() {
+                let quant = 0, X = 2;
+                for (let RED=0; RED<256; RED+=X){
+                    for (let GREEN=0; GREEN<256; GREEN+=X){
+                        for (let BLUE=0; BLUE<256; BLUE+=X){
+                            // return RED.toString(16)+GREEN.toString(16)+BLUE.toString(16)
+                            
+                            let quadrado = document.createElement('div')
+                            // let texto = document.createTextNode(RED.toString(16)+GREEN.toString(16)+BLUE.toString(16))
+                            quadrado.style.float = "left"
+                            // quadrado.style.margin = "1px"
+                            quadrado.style.width = "1px";
+                            quadrado.style.height = "1px";
+                            quadrado.style.backgroundColor = "rgb("+RED+","+GREEN+","+BLUE+")"
+                            // quadrado.appendChild(texto)
+
+
+                            divElement.appendChild(quadrado)
+                            quant++;
+                        }
+                    }
+                }
+                console.log(quant)
+            }
+
+            COLOR()
+
+
+
+        </script>
+    </body>
+</html>

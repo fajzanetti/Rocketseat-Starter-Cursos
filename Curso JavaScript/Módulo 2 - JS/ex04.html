@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ex 4</title>
+    </head>
+    <body>
+        <input type="text" name="nome">
+        <button>Adicionar</button>
+        <div class="app"></div>
+
+        <script>
+            let divElement = document.querySelector(".app")
+            let btnElement = document.querySelector("button")
+            let inputElemet= document.querySelector("input")
+
+            let nomes = ["Diego", "Gabriel", "Lucas"];
+            let ul = document.createElement("ul")
+            for (let n of nomes){
+                let li = document.createElement("li")
+                let texto = document.createTextNode(n)
+                li.appendChild(texto)
+                ul.appendChild(li)
+            }
+            
+
+            btnElement.onclick = () => {
+                let inputText  = inputElemet.value
+                if (inputText != null && inputText != ""){
+                    let li = document.createElement("li")
+                    let texto = document.createTextNode(inputText)
+                    li.appendChild(texto)
+                    ul.appendChild(li)
+                    inputElemet.value = ""
+                }
+            }
+
+            divElement.appendChild(ul)
+            ul.style.backgroundColor = "#aaa"
+            
+
+        </script>
+    </body>
+</html>

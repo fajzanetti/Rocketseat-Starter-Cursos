@@ -1,0 +1,62 @@
+<!-- Crie uma tela com um <input> que deve receber o nome de um usuário no Github. Após digitar o -->
+<!-- nome do usuário e clicar no botão buscar a aplicação deve buscar pela API do Github (conforme -->
+<!-- URL abaixo) os dados de repositórios do usuário e mostrá-los em tela: -->
+<!-- URL de exemplo: https://api.github.com/users/diego3g/repos -->
+<!-- Basta alterar "diego3g" pelo nome do usuário -->
+
+<!DOCTYPE html>
+    <head>
+        <meta charest="utf-8">
+        <title>Ex 2</title>
+    </head>
+    <body>
+
+        <div id="app">
+            <input type="text">
+            <button>Buscar</button>
+
+            <ul></ul>
+        </div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            let inputElement = document.querySelector("#app input")
+            let buttonElement = document.querySelector("#app button")
+            let listElement = document.querySelector("#app ul")
+
+            buttonElement.onclick = () =>{
+                let user = inputElement.value
+
+                axios.get("https://api.github.com/users/"+user)
+                .then(function(response){
+                    renderUsers(response.data.login, response.data.avatar_url)
+                    console.log(response)
+
+                })
+                .catch(function(error) {
+                    console.warn(error)
+                })
+
+                inputElement.value = ""
+
+                function renderUsers(login, avatar){
+                    let liElement = document.createElement("li")
+                    let textElement = document.createTextNode(login)
+                    
+                    let imgElement = document.createElement("img")
+                    imgElement.setAttribute("src", avatar)
+                    imgElement.setAttribute("height", 42)
+                    imgElement.setAttribute("width", 42)
+
+                    liElement.appendChild(imgElement)
+                    liElement.appendChild(textElement)
+                    listElement.appendChild(liElement)
+                    
+                }
+
+            }
+
+
+        </script>
+    </body>
+</html>
