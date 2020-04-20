@@ -1,0 +1,23 @@
+{
+  "name": "Starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fajzanetti/Rocketseat-Starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fajzanetti/Rocketseat-Starter/issues"
+  },
+  "homepage": "https://github.com/fajzanetti/Rocketseat-Starter#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
