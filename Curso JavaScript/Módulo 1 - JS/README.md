@@ -6,7 +6,7 @@
 
 Crie uma função que dado o objeto a seguir:
 
-```bash
+```js
 var endereco = {
  rua: "Rua dos pinheiros",
  numero: 1293,
@@ -22,7 +22,7 @@ Retorne o seguinte conteúdo:
 ## 2º exercício
 
 Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
-```bash
+```js
 function pares(x, y) {
  // código aqui ...
 }
@@ -33,7 +33,7 @@ pares(32, 321);
 
 Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript" e retorna um booleano true/false caso exista ou não.
 
-```bash
+```js
 function temHabilidade(skills) {
  // código aqui
 }
@@ -46,7 +46,7 @@ temHabilidade(skills); // true ou false
 ## 4º exercício
 
 Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
-```bash
+```js
 function experiencia(anos) {
  // código aqui
 }
@@ -61,7 +61,7 @@ experiencia(anosEstudo);
 ## 5º exercício
 
 Dado o seguinte vetor de objetos:
-```bash
+```js
 var usuarios = [
  {
  nome: "Diego",
