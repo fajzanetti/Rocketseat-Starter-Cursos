@@ -1,8 +1,12 @@
-https://skylab.rocketseat.com.br/api/files/1566498717618.pdf
+[Link](https://skylab.rocketseat.com.br/api/files/1566498717618.pdf)
 
-Exercícios: Módulo 01
-1º exercício
+# Exercícios: Módulo 01
+
+## 1º exercício
+
 Crie uma função que dado o objeto a seguir:
+
+```bash
 var endereco = {
  rua: "Rua dos pinheiros",
  numero: 1293,
@@ -10,26 +14,39 @@ var endereco = {
  cidade: "São Paulo",
  uf: "SP"
 };
+```
 Retorne o seguinte conteúdo:
-O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
-nº 1293.
-2º exercício
+
+    O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com nº 1293.
+
+## 2º exercício
+
 Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+```bash
 function pares(x, y) {
- // código aqui
+ // código aqui ...
 }
 pares(32, 321);
-3º exercício
-Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
-e retorna um booleano true/false caso exista ou não.
+```
+
+## 3º exercício
+
+Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript" e retorna um booleano true/false caso exista ou não.
+
+```bash
 function temHabilidade(skills) {
  // código aqui
 }
 var skills = ["Javascript", "ReactJS", "React Native"];
 temHabilidade(skills); // true ou false
-Dica: para verificar se um vetor contém um valor, utilize o método indexOf.
-4º exercício
+```
+
+###### Dica: para verificar se um vetor contém um valor, utilize o método indexOf.
+
+## 4º exercício
+
 Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+```bash
 function experiencia(anos) {
  // código aqui
 }
@@ -39,8 +56,12 @@ experiencia(anosEstudo);
 // De 1-3 anos: Intermediário
 // De 3-6 anos: Avançado
 // De 7 acima: Jedi Master
-5º exercício
+```
+
+## 5º exercício
+
 Dado o seguinte vetor de objetos:
+```bash
 var usuarios = [
  {
  nome: "Diego",
@@ -51,8 +72,10 @@ var usuarios = [
  habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
  }
 ];
+```
 Escreva uma função que produza o seguinte resultado:
-O Diego possui as habilidades: Javascript, ReactJS, Redux
-O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
-Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array
-com um separador utilize o join.
+
+    O Diego possui as habilidades: Javascript, ReactJS, Redux
+    O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+###### Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array com um separador utilize o join.
