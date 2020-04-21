@@ -41,3 +41,21 @@ Seguindo o resultado do exercício anterior adicione um input em tela e um botã
 <button onClick="adicionar()">Adicionar</button>
 ```
 Ao clicar no botão, a função `adicionar()` deve ser disparada adicionando um novo item a lista de nomes baseado no nome preenchido no input e  renderizando o novo item em tela juntos aos demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+
+# [gerandoCores.html](https://github.com/fajzanetti/Rocketseat-Starter-Cursos/blob/master/Curso%20JavaScript/M%C3%B3dulo%202%20-%20JS/gerandoCores.html)
+
+É apenas um código simples para descontrair, no qual aproveitando-se do exercício anterio [02](https://github.com/fajzanetti/Rocketseat-Starter-Cursos/blob/master/Curso%20JavaScript/M%C3%B3dulo%202%20-%20JS/ex02.html).
+
+Foi feito um código para ver a quantidade e as cores geradas de `1px` por `1px` que o navegador conseguiria renderizar;
+
+> (Dica) Para aumentar ou diminuir a quantidade de cores, basta alterar a variável do código `REP`:
+
+```html
+...
+function COLOR() {
+                let quant = 0, REP = 2;
+                for (let RED=0; RED<256; RED+=REP){
+                    for (let GREEN=0; GREEN<256; GREEN+=REP){
+                        for (let BLUE=0; BLUE<256; BLUE+=REP){
+...
+```
