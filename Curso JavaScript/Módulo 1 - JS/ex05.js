@@ -1,6 +1,3 @@
-// Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array
-// com um separador utilize o join
-
 var usuarios = [
     {
     nome: "Diego",
