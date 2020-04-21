@@ -1,9 +1,9 @@
 const axios = require('axios')
 
 class Github {
-    static async getRepositories(repo) {
+    static async getRepositories(repositorie) {
         try {
-            const response = await axios.get(`https://api.github.com/repos/${repo}`)
+            const response = await axios.get(`https://api.github.com/repos/${repositorie}`)
             console.log(response.data);
 
         } catch(err) {
