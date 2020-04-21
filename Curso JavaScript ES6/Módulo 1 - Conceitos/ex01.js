@@ -6,10 +6,6 @@ class Usuario {
     }
 
     isAdmin(){
-        // if (this.admin === true)
-        //     return true
-        // else
-        //     return false
         return this.admin === true ? true : false
     }
 }
