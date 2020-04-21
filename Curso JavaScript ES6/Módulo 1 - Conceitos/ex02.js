@@ -22,9 +22,9 @@ const find = usuarios.find(item => item.empresa === 'Google')
 console.log(find)
 
 // MAP e FILTER
-const idade2x = usuarios.map(item => {
+const idadeAux = usuarios.map(item => {
     item.idade *= 2
     return item
 })
-const filter2x = idade2x.filter(item => item.idade <= 50)
-console.log(filter2x)
+const filterAux = idadeAux.filter(item => item.idade <= 50)
+console.log(filterAux)
