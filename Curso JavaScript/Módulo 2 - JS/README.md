@@ -9,6 +9,7 @@ Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de u
 ## 2º exercício
 
 Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de algum quadrado troque sua cor para uma cor aleatória gerada pela função abaixo:
+
 ```js
 function getRandomColor() {
  var letters = "0123456789ABCDEF";
