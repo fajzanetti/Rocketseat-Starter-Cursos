@@ -1,4 +1,4 @@
-let e = {
+let end = {
     rua: "Pinheiros",
     numero: 1293,
     bairro: "Centro",
@@ -6,5 +6,5 @@ let e = {
     uf: "SP"
 }
 
-console.log ("O usuário mora em "+e.cidade+" / "+e.uf+", no bairro "
-    +e.bairro+', na rua "'+e.rua+'" com nº '+e.numero)
+console.log ("O usuário mora em "+end.cidade+" / "+end.uf+", no bairro "
+    +end.bairro+', na rua "'+end.rua+'" com nº '+end.numero)
