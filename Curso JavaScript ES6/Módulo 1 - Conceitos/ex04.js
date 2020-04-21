@@ -14,5 +14,5 @@ console.log(cidade); // Rio do Sul
 console.log(estado); // SC
 
 // 4.2
-const mostraInfo = ({ nome, idade }) => `${nome} tem ${idade} anos.`
+const mostraInfo = ({ nome, idade }) => `${nome} tem ${idade} anos!`
 console.log(mostraInfo({ nome: 'Diego', idade: 23 }))
