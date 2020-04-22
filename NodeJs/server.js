@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const express = require('express')
 const mongoose = require('mongoose')
 const requireDir = require('require-dir')
@@ -6,8 +8,12 @@ const requireDir = require('require-dir')
 const app = express()
 app.use(express.json())
 
+// app.get('/', (req, res) => {
+//     return res.send(process.env.DB_USER + " Teste")
+// })
+
 // Iniciando o DB
-mongoose.connect('mongodb+srv://felipe:zanetti@cluster0-olkok.mongodb.net/starterNodeJS?retryWrites=true&w=majority', {
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-olkok.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
