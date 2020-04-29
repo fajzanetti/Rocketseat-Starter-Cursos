@@ -5,6 +5,10 @@ import api from '../services/api'
 
 export default class main extends Component {
 
+    state = {
+        docs: []
+    }
+
     componentDidMount(){
         this.loadProducts()
     }
@@ -14,13 +18,16 @@ export default class main extends Component {
 
         const { docs } = response.data
 
-        console.log(docs)
+        this.setState({ docs })
     }
 
     render() {
         return (
             <View>
                 <Text> Hello World ! </Text>
+                {this.state.docs.map(product => {
+                    return <Text key={product._id}>{product.title}</Text>
+                })}
             </View>
         )
     }
