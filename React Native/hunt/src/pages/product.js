@@ -1,12 +1,14 @@
-import React from 'react';
-import { WebView } from 'react-native-webview';
+import React from 'react'
+import { WebView } from 'react-native-webview'
+import { useRoute } from '@react-navigation/native'
 
-const Product = ({ route, navigation }) => (
-  <WebView source={{ uri: route.params.product.url }} />
-);
+export default function Product({navigation}){
+    const route = useRoute()
+    const product = route.params.product
+    navigation.setOptions({
+      title: product.title
+    })
 
-// Product.navigationOptions = ({ navigation }) => ({
-//     title: navigation.params.product.title,
-// });
+    return <WebView source={{ uri: product.url}} />
 
-export default Product;
+}
